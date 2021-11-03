@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat">
+    <style>
+      a:link {
+        color:#D5B4C4;
+        background-color: transparent;
+      }
+      body {
+        font-family: "Montserrat", Tahoma, Arial, sans-serif;
+      }
+      h1 {
+        font-size: 50px;
+      }
+      p {
+        font-size: 17.5px;
+      }
+      :root {
+        --primary_1000: 47, 47, 47;
+        --primary_100: #cacaca
+      }
+      #cursor {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      nav {
+        height: 100vh;
+        width: 70vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+      }
+      a {
+        position: relative;
+        text-decoration: none;
+      }
+      a:after {
+        content: "";
+        position: absolute;
+        background-color: #8987CD;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+      }
+      a:hover {
+        color: #8987CD;
+      }
+      a:hover:after {
+        width: 100%;
+      }
+    </style>
+
+    <!-- Custom cursor from Internet -->
+    <style type="text/css">
+      * {cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1054.cur), auto !important;}
+    </style>
+    <a href="https://www.cursors-4u.com/cursor/2012/02/11/chrome-pointer.html" target="_blank" title="Chrome Pointer">
+      <img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Chrome Pointer" style="position:absolute; top: 0px; right: 0px;" />
+    </a>
+
+    <title>Rose Soriano's Portfolio</title>
+  </head>
+
+  <body id="wholePage" style="background-color:#2f2f2f; color:#cacaca;">
+    <!--Navigation Header-->
+    <div class="px-3 py-5 bg-primary_1000 text-primary_100">
+      <div class="container">
+        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+
+          <li>
+            <a class="nav-link text-secondary active" href="#">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24"></svg>
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a class="nav-link text-white" href="portfolio.html">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24"></svg>
+              Portfolio
+            </a>
+          </li>
+
+          <li>
+            <a class="nav-link text-white" href="qualifications.html">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24"></svg>
+              Qualifications
+            </a>
+          </li>
+
+          <li>
+            <a class="nav-link text-white" href="service.html">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24"></svg>
+              Service
+            </a>
+          </li>
+
+          <li hidden>
+            <a class="nav-link text-white" href="hidden.html">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24"></svg>
+              Secret Page
+            </a>
+          </li>
+
+          <li> <!--Light/Dark Mode-->
+            <div class="container position-">
+              <svg class="bi d-flex justify-content-endmx-right mb-1" width="24" height="24"></svg>
+              <button type="button" onclick="lightMode()" class="btn btn-light">Light</button>
+              <button type="button" onclick="darkMode()" class="btn btn-dark">Dark</button>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <!--Landing Page Header-->
+    <div class="container text-center my-4">  
+      
+      <h1>Rose Soriano<span id="cursor">_</span></h1>
+      <!-- Blinking cursor implementation found here: https://medium.com/@bharatgupta_2334/how-to-create-blinking-cursor-effect-using-javascript-fad099e8bcb9 -->
+      <script>
+        var cursor = true;
+        var speed = 250;
+
+        setInterval(() => {
+          if(cursor) {
+            document.getElementById('cursor').style.opacity = 0;
+            cursor = false;
+          } else {
+            document.getElementById('cursor').style.opacity = 1;
+            cursor = true;
+          }
+        }, speed);
+      </script>
+      <br>
+      <p> Senior <a href="https://engineering.tamu.edu/ce/index.html">computer-engineering student at Texas A&M University</a> that enjoys developing skills in cloud, CI/CD, and configuration management.</p>
+      <br>
+    </div>
+    
+    <!--Introduction-->
+    <div class="container">
+      <div class="row">
+        <div class="col mx-5">
+          <img src="images/keyboard-type.gif" />
+        </div>
+        <div class="col">
+          <p class="mx-1 my-4">Starting off being bad at something and then putting in the hard work to get better at it, is a value that I follow.<br><br>
+            My excitement in tinkering, solving, and collaborating has followed me throughout my education years, allowing me to develop a wide range of hard and soft skills through courses and personal hobbies.
+            My DevOps internship and part-time jobs in food service and retail have allowed me to have excellent communication skills among a team. <br><br>
+            Other hobbies include:<br>Sportsbike motorcycles, PC Buildling, powerlifting, and dancing.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Pictures--> 
+    <br><br><br><hr/><hr/><hr/><br>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col">
+          <img src="images/motorcycle.jpg" style="width:400px;height:300px" />
+        </div>
+        <div class="col">
+          <img src="images/powerlifting.jpg" style="width:500px;height:300px" />
+        </div>
+        <div class="col">
+          <img src="images/PC.jpg" style="width:300px;height:300px" />
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="js/function.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script> <!--Package to aid grid element placement, used from Bootstraps website: https://getbootstrap.com/docs/5.0/examples/masonry/-->
+
+  </body>
+
+</html>

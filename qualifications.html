@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat">
+    <style>
+      a:link {
+        color:#D5B4C4;
+        background-color: transparent;
+      }
+      body {
+        font-family: "Montserrat", Tahoma, Arial, sans-serif;
+      }
+      h1 {
+        font-size: 50px;
+        text-align:center
+      }
+      p {
+        font-size: 17px;
+      }
+      :root {
+        --primary_1000: 47, 47, 47;
+        --primary_100: #cacaca
+      }
+      nav {
+        height: 100vh;
+        width: 70vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+      }
+      .nav a {
+        position: relative;
+      }
+      .nav a:after {
+        content: "";
+        position: absolute;
+        background-color: #8987CD;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+      }
+      .nav a:hover {
+        color: #8987CD;
+      }
+      .nav a:hover:after {
+        width: 100%;
+      }
+    </style>
+
+    <!-- Custom cursor from Internet -->
+    <style type="text/css">
+      * {cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1054.cur), auto !important;}
+    </style>
+    <a href="https://www.cursors-4u.com/cursor/2012/02/11/chrome-pointer.html" target="_blank" title="Chrome Pointer">
+      <img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Chrome Pointer" style="position:absolute; top: 0px; right: 0px;" />
+    </a>
+
+    <title>Rose Soriano's Portfolio</title>
+  </head>
+
+  <body id="wholePage" style="background-color:#2f2f2f; color:#cacaca;">
+    <!--Navigation Header-->
+    <div class="px-3 py-5 bg-primary_1000 text-primary_100">
+      <div class="container">
+
+        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+          <li>
+            <a class="nav-link text-white" href="index.html">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24"></svg>
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a class="nav-link text-white" href="portfolio.html">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24"></svg>
+              Portfolio
+            </a>
+          </li>
+
+          <li>
+            <a class="nav-link text-secondary active" href="#">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24"></svg>
+              Qualifications
+            </a>
+          </li>
+
+          <li>
+            <a class="nav-link text-white" href="service.html">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24"></svg>
+              Service
+            </a>
+          </li>
+
+          <li> <!--Light/Dark Mode-->
+            <div class="container position-">
+              <svg class="bi d-flex justify-content-endmx-right mb-1" width="24" height="24"></svg>
+              <button type="button" onclick="lightMode()" class="btn btn-light">Light</button>
+              <button type="button" onclick="darkMode()" class="btn btn-dark">Dark</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Describe technical skills and technical areas of interest in computer science-->
+    <div class="my-5 ">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h1>Technical Skills</h1> <br>
+            <p>My education at Texas A&M University has trained my technical skills in software and hardware engineering and allowed me to delve deeper 
+            in my interest to the software development life cycle. In my computer science courses, such as Data Structures and Algorithms, Computer Architecture and Design, 
+            and Programming Languages, I have completed many labs involving the use of C++, Java, Bash, and Python. I worked extensively coding C++ in a Linux environment in my last spring semester,
+            which had prepared me to interview and accept a position as a DevOps intern at Arthrex California Technology this past summer. I got to increase my skills specifically in the mainstream 
+            scripting languages, Python and Bash, to be able to create scripts to automate processes. I learned how to safely integrate SSH keys into my code to automate 3rd party tools such as GitHub
+              and JFrog Artifactory. My mentor and supervisor helped me learn how to containerize software in Docker by creating Dockerfiles for source code and 3rd party libraries. I also then gained 
+              foundational knowledge on how to setup a CI/CD pipeline both in Atlassian BitBucket and CircleCI by learning how to format and create “.yaml” configuration files. All the projects that I 
+              worked on at my internship allowed me to see the importance of other tools that are used among software teams that might not be considered software used for developing, or coding. Continuously 
+              building code, as well as continuously testing, helps to increase the rate of delivering what development teams produce. I understand the bigger picture on how source code can turn into a fully 
+              functioning product in the production environment, especially with how they might be deployed using Amazon Web Services. Being a part of a software team also exposed me to Atlassian JIRA, which 
+              is a tool that taught me how to work under Agile project management. I see the value in frequent and efficient communication with other teams in a software sector. My exposure to DevOps is just 
+              the starting point on my curiosity of automation and cloud tools.</p>
+            
+          </div>
+          <div class="text-center col-sm">
+            <h1>Resume</h1> <br>
+              <img src="images/resume.png" style="width:600px;height:700px" />
+              <br>
+              <div class="text-end mx-3 my-1">
+                <a href="images/resume.pdf" class="btn btn-secondary btn-lg" tabindex="-1" role="button" aria-disabled="true">pdf</a>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <br>
+            <h1>Technical Interest</h1> 
+            <p class="lead"> <br>
+              After my TechOps internship at Arthrex, I became more familiar in the necessity and importance of DevOps roles in software departments. Automation is something that
+              I am passionate about, because saving time is the key to reaching goals in an efficient, but speedy way. In the future, I plan to get my AWS Certified Cloud Practioner certification, and then 
+              a CompTIA Network+ certification. I want to become more accumulated with managing software company's affiliation with cloud services such as AWS, and then also help to push code to production using
+              CI/CD and configuration management.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- JavaScript plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="js/function.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script> <!--Package to aid grid element placement, used from Bootstraps website: https://getbootstrap.com/docs/5.0/examples/masonry/-->
+
+  </body>
+
+</html>
