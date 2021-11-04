@@ -1,11 +1,15 @@
-const app = require("express")();
+var http = require('http');
+var fs = require('fs');
 
-const PORT = process.env.PORT || 3000;
+const PORT=8080; 
 
-app.get("", (req, res) => {
-    res.send("Hello world");
-});
+fs.readFile('./index.html', function (err, html) {
 
-app.listen(PORT, () => {
-    console.log('App up at port ${PORT}');
+    if (err) throw err;    
+
+    http.createServer(function(request, response) {  
+        response.writeHeader(200, {"Content-Type": "text/html"});  
+        response.write(html);  
+        response.end();  
+    }).listen(PORT);
 });
