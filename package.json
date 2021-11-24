@@ -2,23 +2,11 @@
   "name": "Portfolio-Website",
   "version": "1.0.0",
   "description": "Providing my code here to highlight my coding styles for web development/front end.  Click on index.html, or any of the .html files to see my showcasing of my neat and organized code.",
-  "main": "index.js",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "serve",
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rosesoriano-dtx/Portfolio-Website.git"
+  "dependencies": {
+    "serve": "^10.0.1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rosesoriano-dtx/Portfolio-Website/issues"
-  },
-  "homepage": "https://github.com/rosesoriano-dtx/Portfolio-Website#readme"
+  "author": "Rose Soriano"
 }
