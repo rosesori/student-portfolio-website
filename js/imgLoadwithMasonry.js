@@ -1,18 +1,13 @@
-$(document).ready(function() {
+// external js: masonry.pkgd.js, imagesloaded.pkgd.js
 
-    var $boxes = $('.box');
-    $boxes.hide();
-  
-    var $container = $('#post-area');
-    $container.imagesLoaded( function() {
-      $boxes.fadeIn();
-  
-      $container.masonry({
-          itemSelector : '.box',
-          columnwidth: 300,
-          gutter: 20,
-          isFitWidth: true,
-          isAnimated: !Modernizr.csstransitions
-      });    
-    });
+var grid = document.querySelector('.grid');
+var msnry;
+
+imagesLoaded( grid, function() {
+  // init Isotope after all images have loaded
+  msnry = new Masonry( grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
   });
+});
